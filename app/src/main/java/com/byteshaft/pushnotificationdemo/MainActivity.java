@@ -14,6 +14,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         System.out.println("Application");
+
+        // Application ID and Client Key from the parse.com
+
         Parse.initialize(this, "8Ynqa7RWy4nWhNjLOUUqVOgfqJjppZNubakJXSUq",
                     "yZS7POumij3y5VSIkwuhcKJX5T7ALrGsMPzrjWn3");
         ParseInstallation.getCurrentInstallation().saveInBackground();
